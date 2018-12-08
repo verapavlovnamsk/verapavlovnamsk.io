@@ -1,0 +1,113 @@
+/* Basic colors */ 
+@btn-color: #ffcc33;
+@text: #000;
+@blue: #3333ff;
+
+
+@font-face {
+	font-family: 'FuturaLightC';
+	src: url('../fonts/FuturaLightC.eot');
+	src: local('Futura Light Cyrillic'), local('FuturaLightC'),
+		url('../fonts/FuturaLightC.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FuturaLightC.woff') format('woff'),
+		url('../fonts/FuturaLightC.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'FuturaBookC';
+	src: url('../fonts/FuturaBookC.eot');
+	src: local('Futura Book Cyrillic'), local('FuturaBookC'),
+		url('../fonts/FuturaBookC.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FuturaBookC.woff') format('woff'),
+		url('../fonts/FuturaBookC.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+.reg() {
+font-family: 'FuturaLightC';
+} 
+
+
+.bold() {
+font-family: 'FuturaBookC';
+	
+}
+
+
+
+body{
+font-family: reg();	
+}
+
+/* Basic setting */ 
+html {
+	font-size: 10px;
+}
+
+section {
+	padding: 10rem 0;
+}
+
+
+main {
+	padding: 3rem 0;
+	&-content { 
+	margin-top: 10rem;
+	}
+}
+
+
+
+.main-content {
+	margin-top: 10rem;
+}
+.header {
+
+	
+
+}
+
+.tel {
+	display: inline-block;
+	color: @text;
+		
+	
+}
+
+.wrap{
+	display:table;
+	width: 100%;
+	height: 7rem;
+	line-height: 30px;
+	font-size: 20px;
+
+	&-block{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: right;
+	font-family: bold();
+
+	}
+}
+
+
+.button {
+	
+padding: 1rem 3rem;
+border-radius: 2px;
+font-size: 1.2rem;
+background-color: @btn-color;
+color: @text;
+text-transform: uppercase;
+border: none;
+transition: all 0.2s;
+&:hover {
+	cursor:pointer;
+	background-color: darken(@btn-color, 10%);
+}
+}
